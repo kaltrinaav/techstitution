@@ -1,0 +1,25 @@
+.main,.house{
+font-family: fantasy;
+color: blue;
+font-style: bold
+background-color:lightblue;
+}
+.main{
+
+font-size: 12px;
+}
+
+.house{
+
+font-size: 22px;
+}
+
+body{background-color:lightblue;}
+#techstitution{
+font-size: 50px;
+
+}
+#grupi{
+font-size: 25px;
+
+}
