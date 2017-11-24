@@ -1,25 +1,10 @@
-.main,.house{
-font-family: fantasy;
-color: blue;
-font-style: bold
-background-color:lightblue;
+.change{
+    background-color: #98ff99;
+    
 }
-.main{
-
-font-size: 12px;
+.lcolor{
+	color: white;
 }
-
-.house{
-
-font-size: 22px;
-}
-
-body{background-color:lightblue;}
-#techstitution{
-font-size: 50px;
-
-}
-#grupi{
-font-size: 25px;
-
+.container-fluid .row .col-sm-1 {
+    border="1";
 }
