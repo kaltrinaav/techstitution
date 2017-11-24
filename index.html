@@ -15,6 +15,7 @@
 			<!-- skip three columns -->
 			<h3>Forma e regjistrimit te pikave kufitare </h3>
 			<form class="form-horizontal" id="border-wait-form">
+				<input type="hidden" id="datetime-now" />
 				<div class="form-group form-style-group">
 					<label class="control-label col-xs-3" for="pika-kufitare">Pika kufitare:</label>
 					<div class="col-xs-5">
@@ -43,7 +44,7 @@
 				<label class="control-label col-xs-3" for="hyrje-min"> Minimum:</label>
 				<div class="form-group">
 					<div class="col-xs-5">
-				<input type="text" class="form-control" id="hyrje-min-minuta"> 
+				<input type="number" min=0 max =59 class="form-control" id="hyrje-min-minuta"> 
 			</div>
 			<span style="margin-left:-10px">minuta</span>
 			   </div>
@@ -58,7 +59,7 @@
 				<label class="control-label col-xs-3" for="hyrje-max"> Maksimum:</label>
 				<div class="form-group">
 					<div class="col-xs-5">
-				<input type="text" class="form-control" id="hyrje-max-minuta"> 
+				<input type="number" min=0 max=59 class="form-control" id="hyrje-max-minuta"> 
 			</div>
 			<span style="margin-left:-10px">minuta</span>
 			   </div>
@@ -73,7 +74,7 @@
 				<label class="control-label col-xs-3" for="dalje-min-minuta"> Minimum:</label>
 				<div class="form-group">
 					<div class="col-xs-5">
-				<input type="text" class="form-control" id="dalje-min-minuta"> 
+				<input type="number" min=0 max=59 class="form-control" id="dalje-min-minuta"> 
 			</div>
 			<span style="margin-left:-10px">minuta</span>
 			   </div>
@@ -87,7 +88,7 @@
 				<label class="control-label col-xs-3" for="dalje-max"> Maksimium:</label>
 				<div class="form-group">
 					<div class="col-xs-5">
-				<input type="text" class="form-control" id="dalje-max-minuta"> 
+				<input type="number" min=0 max=59 class="form-control" id="dalje-max-minuta"> 
 			</div>
 			<span style="margin-left:-10px">minuta</span>
 			   </div>
@@ -104,7 +105,7 @@
 				<label class="control-label col-xs-3" for="hyrje-metra"> Minimum:</label>
 				<div class="form-group">
 					<div class="col-xs-5">
-				<input type="text" class="form-control" id="hyrje-min-metra"> 
+				<input type="number" min=0 class="form-control" id="hyrje-min-metra"> 
 			</div>
 			<span style="margin-left:-10px">metra</span>
 			   </div>
@@ -117,7 +118,7 @@
 				<label class="control-label col-xs-3" for="hyrje-max"> Minimum:</label>
 				<div class="form-group">
 					<div class="col-xs-5">
-				<input type="text" class="form-control" id="hyrje-max-metra"> 
+				<input type="number" min=0 class="form-control" id="hyrje-max-metra"> 
 			</div>
 			<span style="margin-left:-10px">metra</span>
 			   </div>
@@ -134,7 +135,7 @@
 				<label class="control-label col-xs-3" for="dalje-min"> Minimum:</label>
 				<div class="form-group">
 					<div class="col-xs-5">
-				<input type="text" class="form-control" id="dalje-min-metra"> 
+				<input type="number" min=0 class="form-control" id="dalje-min-metra"> 
 			</div>
 			<span style="margin-left:-10px">metra</span>
 			   </div>
@@ -149,7 +150,7 @@
 				<label class="control-label col-xs-3" for="dalje-max"> Maksimum:</label>
 				<div class="form-group">
 					<div class="col-xs-5">
-				<input type="text" class="form-control" id="dalje-max-metra"> 
+				<input type="number" min=0 class="form-control" id="dalje-max-metra"> 
 			</div>
 			<span style="margin-left:-10px">metra</span>
 			   </div>
@@ -168,6 +169,7 @@
 
 
  		    </form>
+
 	    </div>
     <div> 
 
