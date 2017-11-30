@@ -1,57 +1,55 @@
-$(document).ready(function(){
-	Highcharts.chart('container', {
+$(document).ready(function(){Highcharts.chart('container', {
     chart: {
         plotBackgroundColor: null,
-        plotBorderWidth: null,
-        plotShadow: false,
-        type: 'pie'
+        plotBorderWidth: 0,
+        plotShadow: false
     },
     title: {
-        text: 'Browser market shares January, 2015 to May, 2015'
+        text: 'Pikat <br>kufitare<br>me aktive',
+        align: 'center',
+        verticalAlign: 'middle',
+        y: 40
     },
     tooltip: {
         pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
     },
     plotOptions: {
         pie: {
-            allowPointSelect: true,
-            cursor: 'pointer',
             dataLabels: {
                 enabled: true,
-                format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                distance: -50,
                 style: {
-                    color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                    fontWeight: 'bold',
+                    color: 'white'
                 }
-            }
+            },
+            startAngle: -100,
+            endAngle: 100,
+            center: ['50%', '75%']
         }
     },
     series: [{
-        name: 'Brands',
-        colorByPoint: true,
-        data: [{
-            name: 'IE',
-            y: 56.33
-        }, {
-            name: 'Chrome',
-            y: 24.03,
-            sliced: true,
-            selected: true
-        }, {
-            name: 'Firefox',
-            y: 10.38
-        }, {
-            name: 'Safari',
-            y: 4.77
-        }, {
-            name: 'Opera',
-            y: 0.91
-        }, {
-            name: 'Other',
-            y: 0.2
-        }]
+        type: 'pie',
+        name: 'Browser share',
+        innerSize: '50%',
+        data: [
+            ['Vermice',   10.38],
+            ['Qafa e Prushit',       56.33],
+            ['Qafa e Morines', 24.03],
+            ['Merdare',    4.77],
+            ['Hani i Elezit',     0.91],
+            {
+                name: 'Proprietary or Undetectable',
+                y: 0.2,
+                dataLabels: {
+                    enabled: false
+                }
+            }
+        ]
     }]
+});
 
-   })
+
 
 });
 	
